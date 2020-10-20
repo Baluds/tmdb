@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tmdb/widgets/Topbanner.dart';
 import 'package:tmdb/widgets/appbartitle.dart';
+import 'package:tmdb/widgets/trailer.dart';
+import 'package:tmdb/widgets/trending.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key}) : super(key: key);
@@ -33,34 +35,6 @@ class _MyHomePageState extends State<MyHomePage> {
           TrailerSection(),
         ],
       ),
-    );
-  }
-}
-
-class TrailerSection extends StatelessWidget {
-  const TrailerSection({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 2,
-    );
-  }
-}
-
-class TrendingSection extends StatelessWidget {
-  const TrendingSection({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 50,
-      width: 20,
-      child: ListView(),
     );
   }
 }
