@@ -28,12 +28,14 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Color(0xFF000033),
         title: Customtitle(),
       ),
-      body: Column(
-        children: [
-          TopBannerSearchCard(),
-          TrendingSection(),
-          TrailerSection(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            TopBannerSearchCard(),
+            TrendingSection(),
+            TrailerSection(),
+          ],
+        ),
       ),
     );
   }
