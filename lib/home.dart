@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tmdb/widgets/Leaderboardheader.dart';
 import 'package:tmdb/widgets/Topbanner.dart';
 import 'package:tmdb/widgets/appbartitle.dart';
 import 'package:tmdb/widgets/trailer.dart';
@@ -34,6 +35,11 @@ class _MyHomePageState extends State<MyHomePage> {
             TopBannerSearchCard(),
             TrendingSection(),
             TrailerSection(),
+            Padding(
+              padding: EdgeInsets.symmetric(
+                  horizontal: MediaQuery.of(context).size.width * 0.1),
+              child: Leadhead(),
+            ),
           ],
         ),
       ),
