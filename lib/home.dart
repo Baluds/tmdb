@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tmdb/widgets/Leaderboard_list.dart';
 import 'package:tmdb/widgets/Leaderboardheader.dart';
 import 'package:tmdb/widgets/Topbanner.dart';
 import 'package:tmdb/widgets/appbartitle.dart';
@@ -40,6 +41,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   horizontal: MediaQuery.of(context).size.width * 0.1),
               child: Leadhead(),
             ),
+            Padding(
+              padding: EdgeInsets.symmetric(
+                  horizontal: MediaQuery.of(context).size.width * 0.1),
+              child: LeaderboardList(),
+            )
           ],
         ),
       ),
