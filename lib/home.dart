@@ -3,6 +3,7 @@ import 'package:tmdb/widgets/Leaderboard_list.dart';
 import 'package:tmdb/widgets/Leaderboardheader.dart';
 import 'package:tmdb/widgets/Topbanner.dart';
 import 'package:tmdb/widgets/appbartitle.dart';
+import 'package:tmdb/widgets/footer.dart';
 import 'package:tmdb/widgets/trailer.dart';
 import 'package:tmdb/widgets/trending.dart';
 
@@ -45,7 +46,8 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: EdgeInsets.symmetric(
                   horizontal: MediaQuery.of(context).size.width * 0.1),
               child: LeaderDetailsTile(),
-            )
+            ),
+            FooterBoardTile(),
           ],
         ),
       ),
