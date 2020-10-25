@@ -16,6 +16,10 @@ class Listcards extends StatelessWidget {
             height: 150,
             decoration: BoxDecoration(
               color: clr,
+              // image: DecorationImage(
+              //   fit: BoxFit.cover,
+              //   image: NetworkImage('https://www.stevensegallery.com/640/360'),
+              // ),
               borderRadius: BorderRadius.circular(20),
             ),
           ),
