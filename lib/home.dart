@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Padding(
               padding: EdgeInsets.symmetric(
                   horizontal: MediaQuery.of(context).size.width * 0.1),
-              child: LeaderboardList(),
+              child: LeaderDetailsTile(),
             )
           ],
         ),
